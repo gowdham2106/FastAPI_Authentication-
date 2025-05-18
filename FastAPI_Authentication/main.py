@@ -17,6 +17,11 @@ app.include_router(user.router)
 app.include_router(authentication.router)
 
 
+@app.get("/")
+async def root():
+    return {"message": "API is live!"}
+
+
 
 
 
